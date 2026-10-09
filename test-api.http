@@ -1,0 +1,35 @@
+### Test root route
+GET http://localhost:5000/
+
+### Test faculty route
+GET http://localhost:5000/faculty
+
+### Get all notices
+GET http://localhost:5000/api/notices
+
+### Create a valid notice
+POST http://localhost:5000/api/notices
+Content-Type: application/json
+
+{
+  "title": "Department Meeting",
+  "message": "All students are requested to attend the department meeting."
+}
+
+### Validate empty title
+POST http://localhost:5000/api/notices
+Content-Type: application/json
+
+{
+  "title": "",
+  "message": "All students are requested to attend the department meeting."
+}
+
+### Validate empty message
+POST http://localhost:5000/api/notices
+Content-Type: application/json
+
+{
+  "title": "Department Meeting",
+  "message": ""
+}

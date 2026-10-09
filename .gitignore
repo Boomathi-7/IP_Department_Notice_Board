@@ -1,0 +1,16 @@
+node_modules/
+dist/
+*.log
+*.tsbuildinfo
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Generated client configuration artifacts
+client/vite.config.js
+client/vite.config.d.ts
+
+
+server/.git-backup/
